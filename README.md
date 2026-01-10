@@ -1,4 +1,4 @@
-pac-Man Algorithm – Overview
+#pac-Man Algorithm – Overview
 
 This document describes the decision-making algorithm of my Pac-Man agent.
 At each step, Pac-Man selects a movement direction based on the current game state, using a strict priority-based rule system focused on survival first and efficient score collection.
