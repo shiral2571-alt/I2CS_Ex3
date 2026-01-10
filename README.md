@@ -3,7 +3,7 @@
 This document describes the decision-making algorithm of my Pac-Man agent.
 At each step, Pac-Man selects a movement direction based on the current game state, using a strict priority-based rule system focused on survival first and efficient score collection.
 
-### Game Information Used
+## Game Information Used
 
 At every move, Pac-Man considers the following information:
 
@@ -25,7 +25,7 @@ Grid-based distances computed using BFS (shortest-path search)
 
 All distances are measured in number of grid steps.
 
-### Decision Rules (Priority Order)
+## Decision Rules (Priority Order)
 
 Pac-Man applies the following rules in order.
 The first rule whose condition is satisfied determines the move.
@@ -64,13 +64,13 @@ If none of the above conditions apply, Pac-Man continues to clear the board by m
 
 This rule acts as the default behavior and is responsible for steady progress through the level.
 
-### Pathfinding
+## Pathfinding
 
 All movement decisions are based on shortest-path (BFS) calculations on the grid while respecting walls and board boundaries (including cyclic boards when enabled).
 
 Pac-Man always chooses a legal move that minimizes the distance to the selected target.
 
-### Edge Cases and Stability
+## Edge Cases and Stability
 
 If no valid path to a target is found, Pac-Man selects any legal move to avoid getting stuck.
 
@@ -78,7 +78,7 @@ A short position history is maintained to reduce oscillations and local loops.
 
 When multiple directions are equally optimal, a consistent legal direction is chosen.
 
-### Notes
+## Notes
 
 Not all rules necessarily trigger in every game run.
 Some rules depend on specific game situations (ghost proximity, eatable timing, green dot location).
