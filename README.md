@@ -78,6 +78,14 @@ A short position history is maintained to reduce oscillations and local loops.
 
 When multiple directions are equally optimal, a consistent legal direction is chosen.
 
+## Testing
+
+Basic unit tests were written for the `Map` class to verify the correctness of the core grid operations  
+(initialization, distance calculation, and shortest path).
+
+The Pac-Man algorithm (`Ex3Algo`) was tested by running the game on **Level 4** and observing the agent’s behavior during gameplay.
+
+
 ## Notes
 
 Not all rules necessarily trigger in every game run.
