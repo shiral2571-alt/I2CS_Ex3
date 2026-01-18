@@ -29,6 +29,27 @@ public class Ex3Main {
     public static void play1() {
     	Game ex3 = new Game();//new Game(level);
     	ex3.init(GameInfo.CASE_SCENARIO, GameInfo.MY_ID, GameInfo.CYCLIC_MODE, GameInfo.RANDOM_SEED, GameInfo.RESOLUTION_NORM, GameInfo.DT, -1);
+        int cnt = 0;
+        for (int i = 0; i < 10; i++) {   // 10 זה גבול בטוח
+            try {
+                if (ex3.getGhosts(i) != null) cnt++;
+            } catch (Exception e) {
+                break;
+            }
+        }
+        System.out.println("Ghosts=" + cnt);
+        exe.ex3.game.GhostCL[] gs;
+        try {
+            gs = ex3.getGhosts(0); // מחזיר מערך רוחות
+            System.out.println("ghosts array length = " + (gs == null ? -1 : gs.length));
+            if (gs != null) {
+                for (int k = 0; k < gs.length; k++) {
+                    System.out.println("ghost[" + k + "] = " + gs[k]);
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("getGhosts(0) failed: " + e);
+        }
         PacManAlgo man = new Ex3Algo();
         while(ex3.getStatus()!=PacmanGame.DONE) {
             _cmd = ex3.getKeyChar();
