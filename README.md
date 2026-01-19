@@ -85,9 +85,55 @@ Basic unit tests were written for the `Map` class to verify the correctness of t
 
 The Pac-Man algorithm (`Ex3Algo`) was tested by running the game on **Level 4** and observing the agent’s behavior during gameplay.
 
+## Deliverables (as required by Ex3)
+
+The GitHub Release includes:
+
+ Ex3_2.jar
+
+Client algorithm only (Ex3Algo)
+
+ Ex3_3.jar
+
+Full Pac-Man game:
+Client + Server + GUI
+
+Ex3_docs.zip
+
+Documentation including:
+
+README
+
+Images
+
+Algorithm figures
+
+Explanation of design choices
+
+ Ex3_all_src.zip
+
+Complete source code:
+src/, test/, libs/, README.md
+
+## Running the Gam
+
+Run the full Pac-Man game:
+java -jar Ex3_3.jar
+
+Run only the client-side tests:
+java -jar Ex3_2.jar
+
 
 ## Notes
 
 Not all rules necessarily trigger in every game run.
 Some rules depend on specific game situations (ghost proximity, eatable timing, green dot location).
 Even if a rule does not activate during a specific run, its logic is fully implemented and evaluated at every step.
+
+##  Demo Video
+
+
+
+
+
+
