@@ -115,13 +115,18 @@ Explanation of design choices
 Complete source code:
 src/, test/, libs/, README.md
 
-## Running the Gam
+### Running the Game
 
-Run the full Pac-Man game:
+Run the full Pac-Man game (server + GUI):
 java -jar Ex3_3.jar
 
-Run only the client-side tests:
+Run the client-only version:
 java -jar Ex3_2.jar
+
+Note:
+- Ex3_2.jar starts the algorithm in client mode and requires pressing ENTER to begin.
+- Ex3_3.jar starts the full game automatically without additional input.
+
 
 
 ## Notes
