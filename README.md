@@ -137,7 +137,7 @@ Even if a rule does not activate during a specific run, its logic is fully imple
 
 ##  Demo Video
 
-[Click here to watch the demo video]()
+[Click here to watch the demo video](הקלטת מסך 2026-01-20 000542.mp4)
 
 
 
